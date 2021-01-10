@@ -1,21 +1,24 @@
-# DELANI STUDIO
-![Delani Studio](./images/delani.png)
-#### This is a portfolio for a web design studio called Delani.
+# DOT PIZZA PALACE
+![DOT PIZZA PALACE](./images/delani.png)
+#### This is a website for a pizza joint.
 #### By [Esther Ndichu](https://github.com/estherndichu)
 ## Description
 This portfolio helps to show our clients the work we do and the steps we take to make their dreams into reality.
 ## Setup/Installation Requirements
 * Open terminal on your computer.
 * cd the location where you want this project.
-* Follow this link to the project site : https://github.com/estherndichu/week3-ip
+* Follow this link to the project site : https://estherndichu.github.io/pizza-place/
 * Click on the code dropdown menu, click on HTTPS and copy the link that appears.
 * Go back to terminal and run this command : git clone (link that you copied in step above)
 * Create your own github branch and edit the code as you wish.
 ## BDD
-* User can toggle between the icons and their descriptions.
-* User is able to see image title by hovering the cursor on the image.
-* User is able to interact with us via email and give their feedback.
-* Click on this link to view the portfolio ; https://estherndichu.github.io/week3-ip/
+* User is able to order pizza.
+* User is able to choose size of pizza.
+* User is able to choose type of toppings for pizza.
+* User is able to order more than one pizza.
+* User is able to fill their delivery destination through a prompt.
+* User is able to know the total of the order after completion of ordering process.
+* Click on this link to view the site ; https://estherndichu.github.io/pizza-place/
 ## Technologies Used
 This application has been built using 
 * HTML
