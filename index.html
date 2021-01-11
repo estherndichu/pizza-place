@@ -18,20 +18,43 @@
                 <p>Dot Pizza Palace was esteblished in 2018. It has become the most famous locally owned pizza joint in Nairobi. The pizza served here is always hot and fresh. </p>
                 <form id="new-contact">
                     <div class="form-group">
-                      <label for="crust">Crust</label>
-                      <input type="text" class="form-control" id="crust">
+                      <label for="crust">Crust</label><br>
+                      <select class="form-select" aria-label="Default">
+                        <option value="crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="gluten-free">Gluten-free</option>
+                      </select>
                     </div>
                     <div class="form-group">
-                      <label for="size">Size</label>
-                      <input type="text" class="form-control" id="size">
+                      <label for="size">Size</label> <br>
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="extra-large">Extra large</option>
+                      </select>
                     </div>
                     <div class="form-group">
-                        <label for="toppings">Toppings</label>
-                        <input type="text" class="form-control" id="toppings">
+                        <label for="toppings">Toppings</label><br>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                            <option value="sausage">Sausage</option>
+                            <option value="meat">Meat</option>
+                            <option value="veggies">Veggies</option>
+                          </select>
                       </div>
                       <div class="form-group">
                         <label for="delivery">Delivery</label>
-                        <input type="text" class="form-control" id="delivery">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              YES
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              NO
+                            </label>
+                          </div>
                       </div>
                       <span class="btn btn-primary" id="add-address">ADD ANOTHER PIZZA</span>
                     <button type="submit" class="btn">PLACE ORDER</button>
