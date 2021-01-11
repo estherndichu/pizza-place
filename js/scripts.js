@@ -1,5 +1,5 @@
-function myPizza(){
+function Pizza(crust,toppings){
     this.crust = crust;
-    this.size = size;
     this.toppings = toppings;
 }
+var myPizza = new Pizza (crust,toppings);
