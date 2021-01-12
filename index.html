@@ -1,71 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/jquery-3.5.1 (1).js"></script>
     <script src="./js/scripts.js"></script>
-    <title>Dot Pizza Place</title>
+    <title>Dot Com Pizza Place</title>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 form">
-                <h1>DOT PIZZA PLACE</h1>
-                <h2>ABOUT US</h2>
-                <p>Dot Pizza Palace was esteblished in 2018. It has become the most famous locally owned pizza joint in Nairobi. The pizza served here is always hot and fresh. </p>
-                <form id="pizza-order">
-                    <div class="form-group" id="crust">
-                      <label for="crust">Crust</label><br>
-                      <select class="form-select" aria-label="Default">
-                        <option value="crispy">Crispy</option>
-                        <option value="stuffed">Stuffed</option>
-                        <option value="gluten-free">Gluten-free</option>
-                      </select>
-                    </div>
-                    <div class="form-group" id="size">
-                      <label for="size">Size</label> <br>
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
-                        <option value="large">Large</option>
-                        <option value="medium">Medium</option>
-                        <option value="extra-large">Extra large</option>
-                      </select>
-                    </div>
-                    <div class="form-group" id="toppings">
-                        <label for="toppings">Toppings</label><br>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
-                            <option value="sausage">Sausage</option>
-                            <option value="meat">Meat</option>
-                            <option value="veggies">Veggies</option>
-                          </select>
-                      </div>
-                      <div class="form-group" id="del">
-                        <label for="delivery">Delivery</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              YES
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                              NO
-                            </label>
-                          </div>
-                      </div>
-                      <span class="btn btn-primary" id="add-pizza">ADD ANOTHER PIZZA</span>
-                    <button type="submit" class="btn">PLACE ORDER</button>
-                  </form>
-            </div>
-            <div class="col-md-6 menu">
-                
 
+<body>
+    <h1 class="site-heading text-center d-none d-lg-block">DOT COM PIZZA PLACE</h1>
+    <div id="order"></div>
+    <div class="order mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="order-section"></div>
+                    <h1 class="text-center pt-4"> Make an order</h1>
+                    <p>To buy more than one Pizza, Make another selection then press order now to add to the first order
+                    </p>
+                    <div class="alert alert-success mt-2" id="success">
+                        <strong>Success!</strong> your order will be delivered to your location in
+                        <span style="color: red; font-size:18px" id="place"></span> the delivery fee is ksh 200. Thank you for shopping with us.
+                    </div>
+                    <div class="alert alert-success" id="no-delivery">
+                        <strong>Success!</strong> We will be waiting for you to pick your pizza. Thank you for shopping with us.
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <card-title>
+                                    <h3 class="pt-4 pl-5">Let us know what you want</h3>
+                                </card-title>
+                                <div class="card-body">
+
+                                    <form id="myform">
+                                        <div class="form-group">
+                                            <label for="pizza-size">Pizza Size</label>
+                                            <select class="form-control" id="pizza-size">
+                                                <option value="small">Small -- ksh 600</option>
+                                                <option value="medium">Medium -- ksh 800</option>
+                                                <option value="large"> Large -- ksh 1200</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pizza-crust">Which crust do you want</label>
+                                            <select class="form-control" id="pizza-crust">
+                                                <option value="crispy">Crispy -- ksh 300</option>
+                                                <option value="stuffed">Stuffed -- ksh 200</option>
+                                                <option value="gluten-free">
+                                                    Gluten-free -- ksh 100</option>
+                                            </select>
+                                        </div>
+                                        <p>Toppings</p>
+                                        <div class="toppings">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
+                                                <label class="form-check-label" for="inlineCheckbox1">Pepperoni ksh.
+                                                    100</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
+                                                <label class="form-check-label" for="inlineCheckbox2">Veges ksh.
+                                                    50</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
+                                                <label class="form-check-label" for="inlineCheckbox2">Bacon ksh
+                                                    75</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+                                            Order now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mt-1">
+                                <div class="card-title d-inline-flex">
+                                    <h3 class="p-4">Ordered Items</h3>
+                                    <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
+                                            value="0" id="quantity">
+                                            0
+                                        </button></i>
+                                </div>
+                                <div class="card-body">
+                                    <table id="table">
+                                        <tr>
+                                            <td><br> Size</td>
+                                            <br>
+                                            <td><br> Crust</td>
+                                            <br>
+                                            <td><br> Toppings</td>
+                                            <br>
+                                            <td><br> Total Price</td>
+                                        </tr>
+                                    </table>
+
+                                    <div id="cart">
+                                        <p class="text-center pt-4">
+                                            You have not ordered any pizza
+                                        </p>
+                                    </div>
+
+                                    <div id="items"></div>
+                                    <a href="#order-section">
+                                        <div class="checkout">
+                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                                                Checkout
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLongTitle">
+                      Confirm the price
+                  </h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>
+                      Amount you are to pay for your order is ksh
+                      <span id="money" style="color: red"></span>
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" id="myModel" data-dismiss="modal">
+                      Confirm checkout
+                  </button>
+
+              </div>
+          </div>
+      </div>
+  </div><br><br>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; La Pizza Café 2020</p>
+        </div>
+    </footer>
 </body>
+
 </html>
