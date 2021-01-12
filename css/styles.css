@@ -1,4 +1,4 @@
-/* body{
+body{
     background-image: url(../images/just-pizza.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -6,4 +6,7 @@
 .form {
     background-color: aliceblue;
     text-align: center;
-} */
+}
+#types{
+    background-color: aliceblue;
+}

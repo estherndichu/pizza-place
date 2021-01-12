@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/jquery-3.5.1 (1).js"></script>
     <script src="./js/scripts.js"></script>
     <title>Dot Com Pizza Place</title>
@@ -16,6 +16,35 @@
 
 <body>
     <h1 class="site-heading text-center d-none d-lg-block">DOT COM PIZZA PLACE</h1>
+    <div class="row container-fluid" id="types">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/Veggie.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3>VEGETARIAN PIZZA</h3>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/sausage-pizza.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3>CARLIFONIA PIZZA</h3>
+            <p class="card-text">There’s a reason this is one of the most popular types of pizza. Who doesn’t love biting into a crispy, salty round of pepperoni?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/just-pizza.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3>DETROIT PIZZA</h3>
+            <p class="card-text">If pepperoni just isn’t enough, and you’re looking for a pie with a bit more heft, a meat pizza is a perfect and popular choice. Pile on ground beef and sausage for a hearty meal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="order"></div>
     <div class="order mt-4">
         <div class="container-fluid">
@@ -140,8 +169,8 @@
               </div>
               <div class="modal-body">
                   <p>
-                      Amount you are to pay for your order is ksh
-                      <span id="money" style="color: red"></span>
+                      Total cost of your order is Ksh 
+                      <span id="money"></span>
                   </p>
               </div>
               <div class="modal-footer">
@@ -155,7 +184,7 @@
   </div><br><br>
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; La Pizza Café 2020</p>
+            
         </div>
     </footer>
 </body>
