@@ -73,90 +73,86 @@
                             </card-title>
                             <div class="card-body">
 
-                            <form id="myform">
-                            <div class="form-group">
-                                <label for="pizza-size">Pizza Size</label>
-                                    <select class="form-control" id="pizza-size">
-                                        <option value="medium">Medium  Ksh 500</option>
-                                            <option value="large">Large  Ksh 600</option>
-                                            <option value="extraLarge">Extra Large  Ksh 900</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pizza-crust">Which crust do you want</label>
-                                            <select class="form-control" id="pizza-crust">
-                                                <option value="crispy">Crispy  Ksh 300</option>
-                                                <option value="stuffed">Stuffed  Ksh 200</option>
-                                                <option value="gluten-free">
-                                                    Gluten-free  Ksh 100</option>
-                                            </select>
-                                        </div>
-                                        <p>Toppings</p>
-                                        <div class="toppings">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="meat" />
-                                                <label class="form-check-label" for="inlineCheckbox1">Meat (medium - ksh 70, large - ksh 100, extra large - ksh 120)</label>
-                                            </div><br>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="vegies" />
-                                                <label class="form-check-label" for="inlineCheckbox2">Vegies(medium - ksh 50,large- ksh70, extra-large - ksh100)</label>
-                                            </div><br>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sausage" />
-                                                <label class="form-check-label" for="inlineCheckbox2">Sausage (medium - ksh120,large - ksh150, extra large - ksh180</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
-                                            ORDER
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <div class="card mt-1">
-                        <div class="card-title d-inline-flex">
-                            <h3 class="p-4">Ordered Items</h3>
-                            <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
+        <form id="myform">
+            <div class="form-group">
+                <label for="pizza-size">Pizza Size</label>
+                    <select class="form-control" id="pizza-size">
+                        <option value="medium">Medium  Ksh 500</option>
+                        <option value="large">Large  Ksh 600</option>
+                        <option value="extraLarge">Extra Large  Ksh 900</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="pizza-crust">Which crust do you want</label>
+                    <select class="form-control" id="pizza-crust">
+                        <option value="crispy">Crispy  Ksh 300</option>
+                        <option value="stuffed">Stuffed  Ksh 200</option>
+                        <option value="gluten-free">
+                            Gluten-free  Ksh 100</option>
+                    </select>
+            </div>
+            <p>Toppings</p>
+        <div class="toppings">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="meat" />
+                        <label class="form-check-label" for="inlineCheckbox1">Meat (medium - ksh 70, large - ksh 100, extra large - ksh 120)</label>
+                </div><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="vegies" />
+                    <label class="form-check-label" for="inlineCheckbox2">Vegies(medium - ksh 50,large- ksh70, extra-large - ksh100)</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sausage" />
+                    <label class="form-check-label" for="inlineCheckbox2">Sausage (medium - ksh120,large - ksh150, extra large - ksh180</label>
+                </div>
+            </div>
+            <button type="submit" class="btn-success btn mt-3" id="orderbtn">ORDER</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="row">
+        <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="card mt-1">
+                    <div class="card-title d-inline-flex">
+                        <h3 class="p-4">Ordered Items</h3>
+                        <i class="p-4 fa fa total"><button class="btn-success btn ml-2"
                                     value="0" id="quantity">
                                     0
                                 </button></i>
-                        </div>
-                        <div class="card-body">
-                            <table id="table">
-                                <tr>
-                                    <td>Size</td>
+            </div>
+                <div class="card-body">
+                    <table id="table">
+                        <tr>
+                            <td>Size</td>
                                     
-                                    <td> Crust</td>
+                            <td> Crust</td>
                                     
-                                    <td> Toppings</td>
+                            <td> Toppings</td>
                                     
-                                    <td> Total Price</td>
-                                </tr>
-                            </table>
+                            <td> Total Price</td>
+                         </tr>
+                    </table>
 
-                            <div id="cart">
-                                <p class="text-center pt-4">
-                                    You have not ordered any pizza
-                                </p>
-                            </div>
+            <div id="cart">
+                <p class="text-center pt-4">You have not ordered any pizza</p>
+            </div>
 
-                            <div id="items"></div>
-                            <a href="#order-section">
-                                <div class="checkout">
-                                    <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+            <div id="items"></div>
+                <a href="#order-section">
+                    <div class="checkout">
+                        <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
                                         Checkout
                                     </button>
-                                </div>
-                            </a>
-                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
             </div>
         </div>
+        </div>
+    </div>
     </div>
 </div>
             </div>            
