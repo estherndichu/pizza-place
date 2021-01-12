@@ -164,7 +164,7 @@ $("document").ready(function() {
         var deliver = confirm(
             "We do deliveries for the low price of Ksh 100. Would you like us to deliver your order?"
         );
-        if (deliver == true) {
+        if (deliver === true) {
             var place = prompt("Enter your location");
             $("#place").text(place);
             $("#success").show();

@@ -1,5 +1,4 @@
 # DOT PIZZA PALACE
-![DOT PIZZA PALACE](./images/delani.png)
 #### This is a website for a pizza joint.
 #### By [Esther Ndichu](https://github.com/estherndichu)
 ## Description
