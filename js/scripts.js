@@ -3,33 +3,26 @@ function Pizza(size, crust) {
     this.crust = crust;
     this.toppings = [];
 }
-
-function Location(name, estate) {
-    this.name = name;
-    this.estate = estate;
-}
-
-
 var sizePrice = {
-    small: 600,
-    medium: 800,
-    large: 1200
+    large: 600,
+    medium: 500,
+    extraLarge: 900
 };
 var toppingPrice = [{
-    pepperoni: {
-        small: 50,
-        medium: 100,
-        large: 150
+    meat: {
+        medium: 70,
+        large: 100,
+        extraLarge: 120
     },
-    veges: {
-        small: 25,
+    vegies: {
         medium: 50,
-        large: 75
+        large: 70,
+        extraLarge: 100
     },
-    bacon: {
-        small: 50,
-        medium: 75,
-        large: 100
+    sausage: {
+        medium: 120,
+        large: 150,
+        extraLarge: 180
     }
 }];
 
@@ -169,14 +162,14 @@ $("document").ready(function() {
 
     $("#myModel").click(function() {
         var deliver = confirm(
-            "Would you like us deliver your pizza to your doorstep? transport cost ksh 200."
+            "We do deliveries for the low price of Ksh 100. Would you like us to deliver your order?"
         );
-        if (deliver) {
+        if (deliver == true) {
             var place = prompt("Enter your location");
             $("#place").text(place);
             $("#success").show();
         } else {
-            $("#no-delivery").show();
+            alert('Please pick up your order from our premises within one hour')
         }
 
         $("#pizza-size").val("");
