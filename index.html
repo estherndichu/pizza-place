@@ -58,13 +58,14 @@
                 <div class="col-md-12">
                     <div id="order-section"></div>
                     <h1 class="text-center pt-4"> Make an order</h1>
-                    <p>To buy more than one Pizza, Make another selection then press order now to add to the first order
+                    <p>If 
                     </p>
                     <div class="alert alert-success mt-2" id="success">
                         <strong>Success!</strong> Your order will be delivered at 
                         <span style="text-decoration: underline;" id="place"></span> for a fee of Ksh 100. Thank you.
                     </div>
                     <div class="row">
+                        <div class="col-md-2"></div>
                         <div class="col-md-6">
                             <div class="card">
                                 <card-title>
@@ -115,50 +116,53 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card mt-1">
-                                <div class="card-title d-inline-flex">
-                                    <h3 class="p-4">Ordered Items</h3>
-                                    <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
-                                            value="0" id="quantity">
-                                            0
-                                        </button></i>
-                                </div>
-                                <div class="card-body">
-                                    <table id="table">
-                                        <tr>
-                                            <td><br> Size</td>
-                                            <br>
-                                            <td><br> Crust</td>
-                                            <br>
-                                            <td><br> Toppings</td>
-                                            <br>
-                                            <td><br> Total Price</td>
-                                        </tr>
-                                    </table>
+                    </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <div class="card mt-1">
+                        <div class="card-title d-inline-flex">
+                            <h3 class="p-4">Ordered Items</h3>
+                            <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
+                                    value="0" id="quantity">
+                                    0
+                                </button></i>
+                        </div>
+                        <div class="card-body">
+                            <table id="table">
+                                <tr>
+                                    <td><br> Size</td>
+                                    <br>
+                                    <td><br> Crust</td>
+                                    <br>
+                                    <td><br> Toppings</td>
+                                    <br>
+                                    <td><br> Total Price</td>
+                                </tr>
+                            </table>
 
-                                    <div id="cart">
-                                        <p class="text-center pt-4">
-                                            You have not ordered any pizza
-                                        </p>
-                                    </div>
-
-                                    <div id="items"></div>
-                                    <a href="#order-section">
-                                        <div class="checkout">
-                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
-                                                Checkout
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div id="cart">
+                                <p class="text-center pt-4">
+                                    You have not ordered any pizza
+                                </p>
                             </div>
+
+                            <div id="items"></div>
+                            <a href="#order-section">
+                                <div class="checkout">
+                                    <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                                        Checkout
+                                    </button>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+            </div>            
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
@@ -185,11 +189,6 @@
           </div>
       </div>
   </div><br><br>
-    <footer class="footer text-faded text-center py-5">
-        <div class="container">
-            
-        </div>
-    </footer>
 </body>
 
 </html>
