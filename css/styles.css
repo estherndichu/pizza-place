@@ -11,6 +11,9 @@ h1{
     text-align: center;
     font-size: 40px;
 }
-#success{
+#success,#table{
     display: none;
+}
+table>tr>td{
+    padding: 20px;
 }
