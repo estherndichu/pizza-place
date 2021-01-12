@@ -31,6 +31,10 @@ var crustPrice = {
     stuffed: 200,
     glutenFree: 300,
 };
+var delivery = {
+    yes : 100,
+    no : 0
+}
 function calculateSizePrice(size) {
     if (size === "medium") {
         return sizePrice.medium * 1;
@@ -68,6 +72,28 @@ function calculateToppingsPrice(toppings) {
 };
 
 
-function checkPepperoni(topping) {
-    return topping === "pepperoni";
-};
+// function checkPepperoni(topping) {
+//     return topping === "pepperoni";
+// };
+$("document").ready(function() {
+
+    function inputtedPizzaSize() {
+        return $("#size")
+            .find(":selected")
+            .val();
+    }
+
+    function inputtedCrust() {
+        return $("#crust")
+            .find(":selected")
+            .val();
+    }
+
+    function inputtedToppings() {
+        var toppingList = [];
+        $(".toppings :checked").each(function() {
+            toppingList.push($(this).val());
+        });
+        return toppingList;
+    };
+});
