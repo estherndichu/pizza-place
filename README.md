@@ -3,7 +3,7 @@
 #### This is a website for a pizza joint.
 #### By [Esther Ndichu](https://github.com/estherndichu)
 ## Description
-This portfolio helps to show our clients the work we do and the steps we take to make their dreams into reality.
+This is the website of a pizzeria that allows its customers to order pizza with their preffered type of crust, size and toppings.
 ## Setup/Installation Requirements
 * Open terminal on your computer.
 * cd the location where you want this project.
