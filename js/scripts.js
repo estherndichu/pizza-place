@@ -33,12 +33,12 @@ var crustPrice = {
 };
 
 function sizeCalcPrice(size) {
-    if (size === "small") {
-        return sizePrice.small * 1;
-    } else if (size === "medium") {
+    if (size === "medium") {
         return sizePrice.medium * 1;
-    } else {
+    } else if (size === "large") {
         return sizePrice.large * 1;
+    } else {
+        return sizePrice.extraLarge * 1;
     }
 }
 
@@ -55,22 +55,22 @@ function crustCalcPrice(crust) {
 function toppingsCalcPrice(toppings) {
     var noOfTopping = 0;
     for (i = 0; i < toppings.length; i++) {
-        if (toppings[i] == "pepperoni") {
-            noOfTopping += 100;
+        if (toppings[i] == "meat") {
+            noOfTopping += 70;
         }
-        if (toppings[i] == "veges") {
+        if (toppings[i] == "vegies") {
             noOfTopping += 50;
         }
-        if (toppings[i] == "bacon") {
-            noOfTopping += 75;
+        if (toppings[i] == "sausage") {
+            noOfTopping += 120;
         }
     }
     return noOfTopping * 1;
 }
 
 
-function checkPepperoni(topping) {
-    return topping === "pepperoni";
+function checkMeat(topping) {
+    return topping === "meat";
 }
 
 
