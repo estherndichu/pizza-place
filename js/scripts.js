@@ -34,21 +34,21 @@ var crustPrice = {
 
 function sizeCalcPrice(size) {
     if (size === "medium") {
-        return sizePrice.medium ;
+        return sizePrice.medium * 1;
     } else if (size === "large") {
-        return sizePrice.large ;
+        return sizePrice.large * 1;
     } else {
-        return sizePrice.extraLarge;
+        return sizePrice.extraLarge * 1;
     }
 }
 
 function crustCalcPrice(crust) {
     if (crust === "crispy") {
-        return crustPrice.crispy;
+        return crustPrice.crispy * 1;
     } else if (crust === "stuffed") {
-        return crustPrice.stuffed;
+        return crustPrice.stuffed * 1;
     } else {
-        return crustPrice.gluten;
+        return crustPrice.gluten * 1;
     }
 }
 
@@ -65,7 +65,7 @@ function toppingsCalcPrice(toppings) {
             noOfTopping += 120;
         }
     }
-    return noOfTopping;
+    return noOfTopping * 1;
 }
 
 
