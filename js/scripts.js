@@ -120,9 +120,7 @@ $("document").ready(function() {
             newPizza.size +
             "</td>" +
             "<td>" +
-            "<p>" +
             newPizza.crust +
-            "</p>" +
             "</td>" +
             "<td>" +
             newPizza.toppings +

@@ -21,3 +21,13 @@ h1{
     padding-bottom: 50px;
     font-size: 60px;
 }
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr>td{
+    width: 100%;
+  }
+
+  
