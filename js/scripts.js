@@ -174,7 +174,6 @@ $("document").ready(function() {
 
         $("#pizza-size").val("");
         $("#pizza-crust").val("");
-        $("#items").remove();
-        $("#quantity").text(0);
+        $("#display").remove();
     });
 });
