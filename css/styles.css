@@ -6,6 +6,7 @@ body{
 #types{
     background-color: aliceblue;
     height: 500px;
+    padding-top: 50px;
 }
 h1{
     text-align: center;
@@ -16,5 +17,7 @@ h1{
 }
 
 .head{
-    top: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px;
 }
