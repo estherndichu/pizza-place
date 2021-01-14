@@ -34,21 +34,21 @@ var crustPrice = {
 
 function sizeCalcPrice(size) {
     if (size === "medium") {
-        return sizePrice.medium * 1;
+        return sizePrice.medium ;
     } else if (size === "large") {
-        return sizePrice.large * 1;
+        return sizePrice.large ;
     } else {
-        return sizePrice.extraLarge * 1;
+        return sizePrice.extraLarge;
     }
 }
 
 function crustCalcPrice(crust) {
     if (crust === "crispy") {
-        return crustPrice.crispy * 1;
+        return crustPrice.crispy;
     } else if (crust === "stuffed") {
-        return crustPrice.stuffed * 1;
+        return crustPrice.stuffed;
     } else {
-        return crustPrice.gluten * 1;
+        return crustPrice.gluten;
     }
 }
 
@@ -65,7 +65,7 @@ function toppingsCalcPrice(toppings) {
             noOfTopping += 120;
         }
     }
-    return noOfTopping * 1;
+    return noOfTopping;
 }
 
 
@@ -151,16 +151,16 @@ $("document").ready(function() {
     });
 
 
-    $("#gettotal").click(function() {
+    $("#getTotal").click(function() {
         var total = 0;
         pizzaList.forEach(function(pizza) {
             total += pizza;
         });
-        $("#money").text(total);
+        $("#orderCost").text(total);
     });
 
 
-    $("#myModel").click(function() {
+    $("#myModal").click(function() {
         var deliver = confirm(
             "We do deliveries for the low price of Ksh 100. Would you like us to deliver your order?"
         );
